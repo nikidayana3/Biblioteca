@@ -22,7 +22,7 @@ crear, mostrar, filtrar por autor y eliminar libros.
 - Eliminar libros
 
 -Estructura del proyecto
-- libro.java — Clase modelo que representa un libro.
+- Libro.java — Clase modelo que representa un libro.
 - Biblioteca.java — Clase que administra la colección de libros (agregar, eliminar, filtrar).
 - VentanaPrincipal.java — Interfaz gráfica de la aplicación.
 - Main.java — Punto de entrada de la aplicación.

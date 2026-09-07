@@ -14,5 +14,41 @@ public class libro {
         this.anioPublicacion=anioPublicacion;
         this.copiasDisponible=copiasDisponible;
     }
+    public String getTitulo(){
+        return titulo;
+    }
+    public void setTitulo(String titulo){
+        this.titulo=titulo;
+    }
+    public String getAutor(){
+        return autor;
+    }
+    public void setAutor(String autor){
+        this.autor=autor;
 
+    }
+    public String getCodigo(){
+        return codigo;
+    }
+    public void  setCodigo(String codigo){
+        this.codigo=codigo;
+    }
+    public String getGenero(){
+        return genero;
+    }
+    public void setGenero(String genero){
+        this.genero=genero;
+    }
+    public int getAnioPublicacion(){
+        return anioPublicacion;
+    }
+    public void setAnioPublicacion(int anioPublicacion){
+        this.anioPublicacion=anioPublicacion;
+    }
+    public int getCopiasDisponible(){
+        return copiasDisponible;
+    }
+    public void setCopiasDisponible(int copiasDisponible){
+        this.copiasDisponible=copiasDisponible;
+    }
 }

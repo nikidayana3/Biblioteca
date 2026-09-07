@@ -51,4 +51,9 @@ public class libro {
     public void setCopiasDisponible(int copiasDisponible){
         this.copiasDisponible=copiasDisponible;
     }
+    public String toString() {
+        return "Título: " + titulo + ", Autor: " + autor + ", Codigo: " + codigo + ", Genero: "+ genero
+                + ", Año de publicacion: " + anioPublicacion + ", Copias disponible: " + copiasDisponible;
+
+    }
 }

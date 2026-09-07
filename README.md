@@ -21,5 +21,12 @@ crear, mostrar, filtrar por autor y eliminar libros.
 - Filtrar libros por autor
 - Eliminar libros
 
+-Estructura del proyecto
+- libro.java — Clase modelo que representa un libro.
+- Biblioteca.java — Clase que administra la colección de libros (agregar, eliminar, filtrar).
+- VentanaPrincipal.java — Interfaz gráfica de la aplicación.
+- Main.java — Punto de entrada de la aplicación.
+
+
 —Uso de IA
 Se utilizó Claude como apoyo conceptual para entender:POO, arrays, constructores, manejo de ramas en Git también para comprender gran parte de la teoría del documento 

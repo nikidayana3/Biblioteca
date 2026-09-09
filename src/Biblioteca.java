@@ -8,5 +8,11 @@ import java.util.ArrayList;
         public void agregarLibro(Libro libro){
             libros.add(libro);
         }
+        public ArrayList<Libro> obtenerTodos(){
+            return libros;
+        }
+        public void eliminarLibro(Libro libro) {
+            libros.remove(libro);
+        }
     }
 

@@ -14,5 +14,14 @@ import java.util.ArrayList;
         public void eliminarLibro(Libro libro) {
             libros.remove(libro);
         }
+        public ArrayList<Libro> filtrarAutor(String autor){
+            ArrayList<Libro> resultado = new ArrayList<Libro>();
+            for (Libro libro : libros) {
+                if (libro.getAutor().equalsIgnoreCase(autor)) {
+                    resultado.add(libro);
+                }
+            }
+            return resultado;
+        }
     }
 

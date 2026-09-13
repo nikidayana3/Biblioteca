@@ -37,13 +37,17 @@ import java.util.HashMap;
             return true;
         }
         public ArrayList<Libro> obtenerTodos(){
+
             return libros;
         }
         public void eliminarLibro(Libro libro) {
+
             libros.remove(libro);
         }
         public ArrayList<Libro> filtrarAutor(String autor){
+
             ArrayList<Libro> resultado = new ArrayList<Libro>();
+
             for (Libro libro : libros) {
                 if (libro.getAutor().equalsIgnoreCase(autor)) {
                     resultado.add(libro);

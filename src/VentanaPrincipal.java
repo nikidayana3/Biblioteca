@@ -5,7 +5,7 @@ import java.awt.*;
 
         public VentanaPrincipal(Biblioteca biblioteca) {
             setTitle("Sistema de Gestión de Biblioteca");
-            setSize(600, 400);
+            setSize(700, 450);
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             String[] columnas = {"Título", "Autor", "Código", "Género", "Año", "Copias"};
             DefaultTableModel modelo = new DefaultTableModel(columnas, 0);

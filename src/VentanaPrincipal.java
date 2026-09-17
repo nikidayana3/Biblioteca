@@ -15,16 +15,22 @@ import java.awt.*;
             JTextField campoTitulo=new JTextField(10); JTextField campoAutor=new JTextField(10); JTextField campoCodigo=new JTextField(10); JTextField campoGenero=new JTextField(10); JTextField campoAnioPublicacion=new JTextField(10); JTextField campoCopiasDisponible=new JTextField(10);
             JButton botonAgregar = new JButton("Agregar");
             JPanel panelFormulario = new JPanel();
+            add(panelFormulario, BorderLayout.NORTH);
+            add(new JScrollPane(tabla), BorderLayout.CENTER);
+            panelFormulario.add(new JLabel("Título:"));
             panelFormulario.add(campoTitulo);
+            panelFormulario.add(new JLabel("Autor:"));
             panelFormulario.add(campoAutor);
+            panelFormulario.add(new JLabel("Código:"));
             panelFormulario.add(campoCodigo);
+            panelFormulario.add(new JLabel("Género:"));
             panelFormulario.add(campoGenero);
+            panelFormulario.add(new JLabel("Año:"));
             panelFormulario.add(campoAnioPublicacion);
+            panelFormulario.add(new JLabel("Copias:"));
             panelFormulario.add(campoCopiasDisponible);
             panelFormulario.add(botonAgregar);
 
-            add(panelFormulario, BorderLayout.NORTH);
-            add(new JScrollPane(tabla), BorderLayout.CENTER);
             setVisible(true);
         }
     }

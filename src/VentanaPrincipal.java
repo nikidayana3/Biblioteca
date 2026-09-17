@@ -2,8 +2,14 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
     public class VentanaPrincipal extends JFrame {
+        private Biblioteca biblioteca;
+        private DefaultTableModel modelo;
+        private JTable tabla;
+        private JTextField campoTitulo, campoAutor, campoCodigo, campoGenero, campoAnioPublicacion, campoCopiasDisponible;
+        private JTextField campoFiltroAutor;
 
         public VentanaPrincipal(Biblioteca biblioteca) {
+
             setTitle("Sistema de Gestión de Biblioteca");
             setSize(700, 450);
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -30,6 +36,18 @@ import java.awt.*;
             panelFormulario.add(new JLabel("Copias:"));
             panelFormulario.add(campoCopiasDisponible);
             panelFormulario.add(botonAgregar);
+
+            campoFiltroAutor = new JTextField(12);
+            JButton botonFiltrar = new JButton("Filtrar por autor");
+            JButton botonVerTodos = new JButton("Ver todos");
+            JButton botonEliminar = new JButton("Eliminar seleccionado");
+
+            JPanel panelInferior = new JPanel();
+            panelInferior.add(new JLabel("Autor:"));
+            panelInferior.add(campoFiltroAutor);
+            panelInferior.add(botonFiltrar);
+            panelInferior.add(botonVerTodos);
+            panelInferior.add(botonEliminar);
 
             setVisible(true);
         }

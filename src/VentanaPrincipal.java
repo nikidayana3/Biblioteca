@@ -49,6 +49,14 @@ import java.awt.*;
             panelInferior.add(botonVerTodos);
             panelInferior.add(botonEliminar);
 
+            add(panelFormulario, BorderLayout.NORTH);
+            add(new JScrollPane(tabla), BorderLayout.CENTER);
+            add(panelInferior, BorderLayout.SOUTH);
+
+
+
+
+
             setVisible(true);
         }
     }

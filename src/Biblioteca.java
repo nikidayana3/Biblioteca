@@ -55,6 +55,12 @@ import java.util.HashMap;
             }
             return resultado;
         }
+        public ArrayList<Libro> obtenerLibrosPorAutorHashMap(String autor) {
+            if (indiceAutor.containsKey(autor)) {
+                return indiceAutor.get(autor);
+            }
+            return new ArrayList<Libro>();
+        }
 
     }
 
